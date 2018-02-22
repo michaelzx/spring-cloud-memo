@@ -1,6 +1,6 @@
 - [介绍](/)
 - consul
-	- [介绍](consul/1-intro)
-	- [CLI](consul/2-cli)
-	- [Service层](consul/3-setup)
+	- [介绍](consul/intro)
+	- [安装](consul/setup)
+	- [CLI](consul/cli)
 - [未完善](wait)
