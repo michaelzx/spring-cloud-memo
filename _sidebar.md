@@ -1,10 +1,6 @@
 - [介绍](/)
-- 基本使用
-	- [快速构建工程](quick_start)
-	- [Web层](web)
-	- [Service层](service)
-	- [Data层](data)
-- 第三方库集成及使用
-	- [swagger](third/swagger)
-	- [lombok](third/lombok)
+- consul
+	- [介绍](consul/1-intro)
+	- [CLI](consul/2-cli)
+	- [Service层](consul/3-setup)
 - [未完善](wait)
