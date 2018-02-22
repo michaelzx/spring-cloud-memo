@@ -1,3 +1,65 @@
-<script>
-	window.location.href="docs/"
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spring Cloud 备忘录</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify-copy-code/styles.css">
+  <script src="//unpkg.com/docsify-copy-code/index.js"></script>
+  <script src="//unpkg.com/docsify-edit-on-github@1.0.1/index.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Spring Cloud 备忘录',
+      repo: '',
+      // subMaxLevel: 1,
+      auto2top: true,
+      // coverpage: true,
+      subMaxLevel: 2,
+      loadSidebar: true,
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [], // or 'auto'
+        // 支持本地化
+        placeholder: {
+          '/': '搜索：请输入关键词'
+        },
+        // 支持本地化
+        noData: {
+          '/': '找不到结果'
+        },
+
+        // 搜索标题的最大程级, 1 - 6
+        depth: 6
+      },
+      plugins: [
+        window.DocsifyCopyCodePlugin.init(),
+        EditOnGithubPlugin.create("https://github.com/michaelzx/spring-boot-memo/tree/master/docs/", "", "Edit on github"),
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span><a href="https://michaelzx.github.io/" target="_blank">听风</a> &copy;2018.</span>',
+            '<span>Proudly published with <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        }
+      ]
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/prismjs@1.11.0/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs@1.11.0/components/prism-sql.min.js"></script>
+</body>
+</html>
