@@ -3,4 +3,5 @@
 	- [介绍](consul/intro)
 	- [安装](consul/setup)
 	- [CLI](consul/cli)
+	- [整合SpringCloud应用](consul/integration)
 - [未完善](wait)
