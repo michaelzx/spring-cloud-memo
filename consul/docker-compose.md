@@ -1,5 +1,5 @@
 # docker-compose 参考
-```
+```yaml
 version: "2"
 services:
   app1:
